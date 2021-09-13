@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "themify";
+    src: url("/src/fonts/themify.ttf")
+  }
+
+ 
+.splashImage{
+    padding-left: 500px;
+    z-index: -1;
+    
+}
+
+.my20{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.navButton{
+    /* font-family: "themify"; */
+    /* this doesnt work for some reason */
+    /* padding: 22px; */
+    @apply inline-block p-4 text-customGray transition duration-150 hover:text-mainPink;
+}
+
+.bannerbg{
+    background-image: url(./media/leaf.png) no-repeat left;
+}
+
+.playColor{
+    background-color: #fcf5ee;
+}
+
+/* hover on thing and mark the rest */
+
+.lort:hover .asdf{ 
+    @apply bg-yellow-300
+}
