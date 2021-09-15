@@ -15,7 +15,8 @@
      },
      variants: {
        extend: {
-           height: ["hover"]
+           height: ["hover"],
+           visibility: ["hover"]
        },
      },
      plugins: [],
