@@ -11,7 +11,7 @@ export default function Treatments() {
             
             <div className="treatment m-auto">
                 <div className="treatmentpic">
-                    <img src={icon} alt="icon" className="block" />
+                    <img src={icon} alt="icon" className="inline" />
                     <span className="block">
                         deez
                     </span>
