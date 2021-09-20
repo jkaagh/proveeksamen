@@ -12,8 +12,8 @@ export default function Treatments() {
             <div className="treatment m-auto">
                 <div className="treatmentpic">
                     <img src={icon} alt="icon" className="inline" />
-                    <span className="block">
-                        deez
+                    <span className="font-serif">
+                        Body Treatment
                     </span>
                 </div>
                 <img src={image1}/>
@@ -21,21 +21,30 @@ export default function Treatments() {
 
             <div className="treatment hidden sm:block">
                 <div className="treatmentpic">
-                    asd
+                    <img src={icon} alt="icon" className="inline" />
+                    <span className="font-serif">
+                        Body Treatment
+                    </span>
                 </div>
                 <img src={image2}/>
             </div>
 
             <div className="treatment hidden sm:block">
                 <div className="treatmentpic">
-                    asd
+                    <img src={icon} alt="icon" className="inline" />
+                    <span className="font-serif">
+                        Body Treatment
+                    </span>
                 </div>
                 <img src={image3}/>
             </div>
 
             <div className="treatment hidden lg:block">
                 <div className="treatmentpic">
-                    asd
+                    <img src={icon} alt="icon" className="inline" />
+                    <span className="font-serif">
+                        Body Treatment
+                    </span>
                 </div>
                 <img src={image4}/>
             </div>
