@@ -32,7 +32,7 @@ export default function Splash() {
                 }
 
                 {heroData != undefined &&
-                    <h1 className="text-6xl pt-4">
+                    <h1 className="text-6xl pt-4 text-textGray">
                         {heroData.title2}
                     </h1>
                 }
