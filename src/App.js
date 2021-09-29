@@ -4,6 +4,7 @@ import Treatments from "./components/Treatments";
 import Reviews from "./components/Reviews";
 import Team from "./components/Team";
 import Appointment from "./components/Appointment";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <Reviews/>
         <Team/>
         <Appointment/>
+        <Footer/>
     </>
   );
 }
