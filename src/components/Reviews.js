@@ -7,7 +7,7 @@ export default function Reviews() {
     const [data, setData] = useState(undefined);
     let imgAdress = "/img/Reviewers/"
     useEffect(() => {
-        console.log("deez")
+        
         Axios.get("http://localhost:5029/recommendation")
         .then((response) => {
             let chosenRecommendation = Math.floor(Math.random() * response.data.length);
@@ -30,19 +30,23 @@ export default function Reviews() {
                 </div>
 
                 <div className="container">
+                    {data != undefined &&   
+                        <>
+                        <img 
+                        src={imgAdress + data.image}  
+                        alt={data.name} 
+                        className="my-4 mx-auto rounded-full"
+                        />
+                        
+                        <span className=" text-xl font-serif text-textGray">
+                            {data.name},&nbsp;
+                        </span> 
 
-                    <img 
-                    src={data != undefined && imgAdress + data.image} 
-                    alt={data != undefined && data.name} 
-                    className="my-4 mx-auto rounded-full"
-                    />
-                    <span className=" text-xl font-serif text-textGray">
-                        {data != undefined && data.name},&nbsp;
-                    </span> 
-
-                    <span className="text-textGray">
-                        {data != undefined && data.title}
-                    </span>
+                        <span className="text-textGray">
+                            { data.title}
+                        </span>
+                        </>
+                    }
                 </div>
             </div>
         </>

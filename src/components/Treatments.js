@@ -47,19 +47,19 @@ export default function Treatments() {
         <div className="flex gap-3">
             {
                 images.length > 0 && images.map((asdf, index) => {
-                    console.log(index)
+                    
                     return(
-                        <>
-                            <div className="treatment m-auto">
-                                <div className="treatmentpic">
-                                    <img src={icon} alt="icon" className="inline" />
-                                    <span className="font-serif">
-                                        Body Treatment
-                                    </span>
-                                </div>
-                                <img src={images[index]}/>
+                        
+                        <div key={index} className="treatment m-auto">
+                            <div className="treatmentpic">
+                                <img src={icon} alt="icon" className="inline" />
+                                <span className="font-serif">
+                                    Body Treatment
+                                </span>
                             </div>
-                        </>
+                            <img src={images[index]} alt=""/>
+                        </div>
+                        
                     )
                 })
             }           

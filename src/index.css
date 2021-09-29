@@ -68,3 +68,11 @@
     background-color: rgba(255, 129, 126, 0.9);
      
 }
+
+.appointmentInput{
+    @apply bg-transparent border-b-2 p-2 outline-none focus:border-mainPink transition ease-out duration-150;
+}
+
+.mainButton{
+   @apply bg-mainPink text-white font-bold px-4 py-3 rounded-full hover:text-textGray transition 
+}

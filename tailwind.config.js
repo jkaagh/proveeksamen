@@ -20,7 +20,10 @@
      variants: {
        extend: {
            height: ["hover"],
-           visibility: ["hover"]
+           visibility: ["hover"],
+           border: ["focus"],
+           borderWidth: ["focus"]
+          
        },
      },
      plugins: [],
