@@ -27,4 +27,5 @@
        },
      },
      plugins: [],
+     important: true,
    }

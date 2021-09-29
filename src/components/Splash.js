@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import Header from "./Header"
 import splashImage from "../media/spa.png"
+import leaf from "../media/leaf.png"
 import Axios from "axios"
+
 export default function Splash() {
 
     const [heroData, setHeroData] = useState(undefined)
@@ -18,48 +20,51 @@ export default function Splash() {
         })
     }, [])
     return (
-        <div className="bannerbg">
+        <div className="bannerbg mb-60">
 
-            <div className="absolute top-0 right-0 w-2/5">
+            <div className="absolute top-0 right-0 w-2/5 hidden lg:block">
                 <img src={splashImage} alt="Woman getting facecare."/>
             </div>
+            <img src={leaf} className="absolute hidden lg:block"/>
+            
+            <div className="row">
+                <div className="col-lg-2 ">
 
-            <div className="my20 mt-36 w-1/3 ">
-                {heroData != undefined &&
-                    <p className="text-mainPink">
-                        {heroData.title1}
-                    </p>
-                }
-
-                {heroData != undefined &&
-                    <h1 className="text-6xl pt-4 text-textGray">
-                        {heroData.title2}
-                    </h1>
-                }
-
-                {heroData != undefined &&
-                    <p className="pt-4">
-                         {heroData.content}
-                    </p>
-                }
-                <div className="flex flex-row mt-2">
-
-                    <button className="px-5 py-3 bg-mainPink font-bold text-white transition hover:text-black  ">
-                        RESERVE NOW
-                    </button>
-                    
-                    <div className="flex flex-row items-center">
-                        <div className="w-10 h-10 rounded-full playColor ml-4">
-                            
-                        </div>
-                    </div>
-                    
                 </div>
+                <div className=" mt-36 lg:w-1/3 w-2/3 mx-auto mx-lg-0">
 
-                <div className="bg-red-400 w-64 pt-64 lort">
-                    <div className="bg-purple-500 w-36 h-36 m-auto transition hover:h-48 asdf">
+                    {heroData != undefined &&
+                        <p className="text-mainPink">
+                            {heroData.title1}
+                        </p>
+                    }
+
+                    {heroData != undefined &&
+                        <h1 className="text-6xl pt-4 text-textGray">
+                            {heroData.title2}
+                        </h1>
+                    }
+
+                    {heroData != undefined &&
+                        <p className="pt-4">
+                            {heroData.content}
+                        </p>
+                    }
+                    <div className="flex flex-row mt-2">
+
+                        <button className="px-5 py-3 bg-mainPink font-bold text-white transition hover:text-black  ">
+                            RESERVE NOW
+                        </button>
+                        
+                        <div className="flex flex-row items-center">
+                            <div className="w-10 h-10 rounded-full playColor ml-4">
+                                
+                            </div>
+                        </div>
                         
                     </div>
+
+            
                 </div>
             </div>
 
