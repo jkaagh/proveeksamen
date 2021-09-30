@@ -1,22 +1,27 @@
-import Splash from "./components/Splash"
-import Header from "./components/Header"
-import Treatments from "./components/Treatments";
-import Reviews from "./components/Reviews";
-import Team from "./components/Team";
-import Appointment from "./components/Appointment";
-import Footer from "./components/Footer";
-import About from "./components/About";
+
+import FrontPage from "./components/FrontPage";
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+import Services from "./components/Services/Services";
+
 function App() {
   return (
     <>
-        <Header/>
-        <Splash/>
-        <About/>
-        <Treatments/>
-        <Reviews/>
-        <Team/>
-        <Appointment/>
-        <Footer/>
+    <Router>
+        <Switch>
+            <Route exact path="/">
+                <FrontPage/>
+            </Route>
+            <Route exact path="/services">
+                <Services/>
+            </Route>
+        </Switch>
+    </Router>
     </>
   );
 }

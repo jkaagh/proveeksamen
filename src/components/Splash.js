@@ -31,7 +31,7 @@ export default function Splash() {
                 <div className="col-lg-2 ">
 
                 </div>
-                <div className=" mt-36 lg:w-1/3 w-2/3 mx-auto mx-lg-0">
+                <div className=" mt-36 lg:w-1/3 w-2/3 mx-auto mx-lg-0 col-6">
 
                     {heroData != undefined &&
                         <p className="text-mainPink">

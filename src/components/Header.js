@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../media/logo.png"
+import {Link} from "react-router-dom";
 export default function Header() {
     return (
         <header className="my20 pt-2">
@@ -13,7 +14,9 @@ export default function Header() {
                          
                     <ul className="float-right pt-8 ">
                         <li className="navButton hover:text-red-600 ">
-                            HOME
+                            <Link to="/">
+                                HOME
+                            </Link>
                         </li>
                         <li className="navButton">
                             ABOUT
@@ -22,7 +25,9 @@ export default function Header() {
                             FEATURE
                         </li>
                         <li className="navButton">
-                            SERVICE
+                            <Link to="/services">
+                                SERVICES
+                            </Link>
                         </li>
                         <li className="navButton">
                             CONTACT

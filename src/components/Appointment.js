@@ -60,6 +60,7 @@ export default function Appointment() {
 
     return (
         <>
+            
             <div className="bg-lightPink flex flex-row mt-24">
                 <div className="w-9/12 hidden xl:block">
                     <img src={image}/>

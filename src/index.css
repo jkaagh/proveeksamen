@@ -74,5 +74,10 @@
 }
 
 .mainButton{
-   @apply bg-mainPink text-white font-bold px-4 py-3 rounded-full hover:text-textGray transition 
+   @apply bg-mainPink text-white font-bold px-4 py-3 rounded-full hover:text-textGray transition; 
+}
+
+.serviceGradient{
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 23%, rgba(0,212,255,0) 100%);
 }
