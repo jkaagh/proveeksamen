@@ -9,7 +9,7 @@ export default function Header() {
             
 
             <div className="flex">
-                <img src={logo}/>
+                <img src={logo} alt="logo"/>
                 <nav className="text-right m-auto z-10">
                          
                     <ul className="float-right pt-8 ">
@@ -22,7 +22,9 @@ export default function Header() {
                             ABOUT
                         </li>
                          <li className="navButton">
-                            FEATURE
+                            <Link to="/features">
+                                FEATURES
+                            </Link>
                         </li>
                         <li className="navButton">
                             <Link to="/services">
@@ -30,7 +32,10 @@ export default function Header() {
                             </Link>
                         </li>
                         <li className="navButton">
-                            CONTACT
+                            <a href="#AppointmentJumplink">
+                                CONTACT
+                            </a>
+                            
                         </li>
                     </ul>
                 </nav>

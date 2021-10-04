@@ -1,13 +1,13 @@
 
 import FrontPage from "./components/FrontPage";
+import Services from "./components/Services/Services";
+import Features from "./components/Features/Features"
 
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
   } from "react-router-dom";
-import Services from "./components/Services/Services";
 
 function App() {
   return (
@@ -19,6 +19,9 @@ function App() {
             </Route>
             <Route exact path="/services">
                 <Services/>
+            </Route>
+            <Route exact path="/features">
+                <Features/>
             </Route>
         </Switch>
     </Router>

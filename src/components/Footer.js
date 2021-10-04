@@ -17,9 +17,9 @@ export default function Footer() {
         <footer className="py-5 mt-12 bg-lightPink">
             <div className="flex flex-col md:flex-row items-center justify-center">
                 <div className="pr-7">
-                    <img src={logo} />
+                    <img src={logo} alt="logo" />
                 </div>
-                {data != undefined &&
+                {data !== undefined &&
                     <>
                         <div className="text-customGray mr-12 mt-4">
                             <p>{data.name}</p>

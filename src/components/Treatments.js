@@ -6,6 +6,7 @@ import image4 from "../media/Treatments/4.jpg"
 import image5 from "../media/Treatments/5.jpg"
 import image6 from "../media/Treatments/6.jpg"
 import image7 from "../media/Treatments/7.jpg"
+import {Link} from "react-router-dom"
 import Procedure from './Procedure'
 
 import icon from "../media/Treatments/icon.png"
@@ -51,13 +52,15 @@ export default function Treatments() {
                     return(
                         
                         <div key={index} className="treatment m-auto">
-                            <div className="treatmentpic">
-                                <img src={icon} alt="icon" className="inline" />
-                                <span className="font-serif">
-                                    Body Treatment
-                                </span>
-                            </div>
-                            <img src={images[index]} alt=""/>
+                            <Link to="/services">
+                                <div className="treatmentpic">
+                                    <img src={icon} alt="icon" className="inline" />
+                                    <span className="font-serif">
+                                        Body Treatment
+                                    </span>
+                                </div>
+                                <img src={images[index]} alt=""/>
+                            </Link>
                         </div>
                         
                     )
@@ -78,6 +81,7 @@ export default function Treatments() {
 
                 <div className="row">
                     <div className="col-md-4">
+                        
                         <Procedure data={procedures[0]}/>
                     </div>
                     <div className="col-md-4">

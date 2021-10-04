@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
-import Header from "./Header"
+
 import splashImage from "../media/spa.png"
 import leaf from "../media/leaf.png"
 import Axios from "axios"
+
 
 export default function Splash() {
 
@@ -25,7 +26,7 @@ export default function Splash() {
             <div className="absolute top-0 right-0 w-2/5 hidden lg:block">
                 <img src={splashImage} alt="Woman getting facecare."/>
             </div>
-            <img src={leaf} className="absolute hidden lg:block"/>
+            <img src={leaf} alt="palm leaf" className="absolute hidden lg:block"/>
             
             <div className="row">
                 <div className="col-lg-2 ">
@@ -33,28 +34,30 @@ export default function Splash() {
                 </div>
                 <div className=" mt-36 lg:w-1/3 w-2/3 mx-auto mx-lg-0 col-6">
 
-                    {heroData != undefined &&
+                    {heroData !== undefined &&
                         <p className="text-mainPink">
                             {heroData.title1}
                         </p>
                     }
 
-                    {heroData != undefined &&
+                    {heroData !== undefined &&
                         <h1 className="text-6xl pt-4 text-textGray">
                             {heroData.title2}
                         </h1>
                     }
 
-                    {heroData != undefined &&
+                    {heroData !== undefined &&
                         <p className="pt-4">
                             {heroData.content}
                         </p>
                     }
                     <div className="flex flex-row mt-2">
 
-                        <button className="px-5 py-3 bg-mainPink font-bold text-white transition hover:text-black  ">
-                            RESERVE NOW
-                        </button>
+                        <a href="#AppointmentJumplink">
+                            <button className="px-5 py-3 bg-mainPink font-bold text-white transition hover:text-black  ">
+                                RESERVE NOW
+                            </button>
+                        </a>
                         
                         <div className="flex flex-row items-center">
                             <div className="w-10 h-10 rounded-full playColor ml-4">

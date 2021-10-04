@@ -18,7 +18,7 @@ export default function Team() {
             <div className="container">
 
                 <div className="row ">
-                    { data != undefined && data.map((data, index) => {
+                    { data !== undefined && data.map((data, index) => {
                         return(
                             <div key={index} className=" col-md-4 p-4 relative">
                                 <div className="absolute bg-white shadow-xl p-2 bottom-0 left-0 right-0 sm:mx-10 text-center ">

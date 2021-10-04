@@ -25,12 +25,12 @@ export default function Reviews() {
                 </div>
                 <div className="m-auto sm:w-8/12 ">
                     <p className="text-xl font-serif text-textGray">
-                        {data != undefined && data.content}
+                        {data !== undefined && data.content}
                     </p>
                 </div>
 
                 <div className="container">
-                    {data != undefined &&   
+                    {data !== undefined &&   
                         <>
                         <img 
                         src={imgAdress + data.image}  

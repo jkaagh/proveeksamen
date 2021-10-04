@@ -25,27 +25,27 @@ export default function Appointment() {
     }, [])
 
     const handleSubmit = () => {
-        if(name == ""){
+        if(name === ""){
             alert("Please enter your name")
             return
         }
-        if(email == ""){
+        if(email === ""){
             alert("Please enter your email")
             return 
         }
-        if(service == "" || service == "SELECT TREATMENT"){
+        if(service === "" || service === "SELECT TREATMENT"){
             alert("Please select treatment")
             return 
         }
-        if(phone == ""){
+        if(phone === ""){
             alert("Please enter your phone number")
             return 
         }
-        if(date == ""){
+        if(date === ""){
             alert("Please chose a date")
             return 
         }
-        if(time == ""){
+        if(time === ""){
             alert("Please chose the time")
             return 
         }
@@ -63,7 +63,7 @@ export default function Appointment() {
             
             <div className="bg-lightPink flex flex-row mt-24">
                 <div className="w-9/12 hidden xl:block">
-                    <img src={image}/>
+                    <img src={image} alt="woman getting head massage"/>
                 </div>
 
                 <div className="p-10 w-full">

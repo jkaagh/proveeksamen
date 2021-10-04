@@ -25,6 +25,8 @@ export default function Services() {
 
     return (
         <div>
+            
+
             <Header/>
 
             <div className="container relative pt-14">
@@ -47,7 +49,7 @@ export default function Services() {
             <div className="container mt-16">
                 <div className="flex lg:flex-wrap flex-col lg:flex-row gap-6 lg:gap-12 ">
                     {
-                        services != undefined && services.map((service, index) => {
+                        services !== undefined && services.map((service, index) => {
                             return(
                                 <ServiceCards key={index} data={service}/>
                             )
@@ -55,6 +57,7 @@ export default function Services() {
                     }
                 </div>
             </div>
+            
 
             <Footer/>    
 
